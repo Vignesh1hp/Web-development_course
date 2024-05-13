@@ -91,7 +91,7 @@ nav li:first-child{
     width:100%;
   }
 }
-
+/* section one background image */
 .first_section{
   background:url(images/laptop.jpg);
   height: 95vh;
@@ -100,11 +100,16 @@ nav li:first-child{
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+/* second section teaching contents */
 .second_section{
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  letter-spacing: 2px;
 }
-
+/* row elements */
 .row{
   display:flex;
   width:100%;
@@ -112,12 +117,19 @@ nav li:first-child{
   align-items: center;
   border: 3px solid black;
   height: 34%;
+  overflow: hidden;
 }
-
+/* inside every row each card */
 .row .card{
   border:3px solid black;
   padding:100px 5px;
   width:100%;
-  text-align: center;
+  /* text-align: center; */
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  text-align: center;
 }
