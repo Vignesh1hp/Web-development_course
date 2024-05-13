@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web-develeopment learning website</title>
+  <link rel="stylesheet" href="styles1.css">
+  
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Teaching contents</a></li>
+      <li><a href="#">Buy courses</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Contact us</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">LOGO</a></li>
+      <li class="hideOnMobile"><a href="#">Home</a></li>
+      <li class="hideOnMobile"><a href="#">Teaching contents</a></li>
+      <li class="hideOnMobile"><a href="#">Buy courses</a></li>
+      <li class="hideOnMobile"><a href="#">About us</a></li>
+      <li class="hideOnMobile"><a href="#">Contact us</a></li>
+      <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+  <section class="first_section">
+
+  </section>
+  <section class="second_section">
+    <div class="row row1">
+      <div class="card card-1">
+        
+        <h1>HTML</h1>
+      </div>
+      <div class="card card-2">
+        <h1>CSS</h1>
+      </div>
+      <div class="card card-3">
+        <h1>Javascript</h1>
+      </div>
+    </div>
+    <div class="row row2">
+      <div class="card card-4">
+        <h1>Bootstrap</h1>
+      </div>
+      <div class="card card-5">
+        <h1>Tailwindcss</h1>
+      </div>
+      <div class="card card-6">
+        <h1>React</h1>
+      </div>
+    </div>
+    <div class="row row3">
+      <div class="card card-7">
+        <h1>MangoDB</h1>
+      </div>
+      <div class="card card-8">
+        <h1>sass</h1>
+      </div>
+      <div class="card card-9">
+        <h1>Angular</h1>
+      </div>
+    </div>
+  </section>
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'flex';
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
